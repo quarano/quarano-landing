@@ -159,6 +159,7 @@ footer.q-page-foot section {
     flex: 1;
     margin: 0;
     max-width: 380px;
+    margin-bottom: 50px;
 }
 
 .q-stage .q-img-container {
@@ -361,6 +362,7 @@ body {
 .q-content {
     max-width: 992px;
 }
+.q-sponsor-icons,
 .q-page-foot, #q-anchor-contact {
     max-width: 100%;
 }
