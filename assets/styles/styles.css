@@ -102,7 +102,13 @@ footer.q-page-foot section {
     padding-top: 20px;
     padding-bottom: 60px;
     max-height: 200px;
+}
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #q-anchor-behoerden.q-stage.q-anchor {
+        background: transparent url('../img/h6@2x.jpg') no-repeat scroll 100% 100%;
+        background-size: contain;
+    }
 }
 
 #q-anchor-buerger.q-stage.q-anchor {
@@ -112,7 +118,12 @@ footer.q-page-foot section {
     padding-top: 20px;
     padding-bottom: 60px;
     max-height: 200px;
-
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #q-anchor-buerger.q-stage.q-anchor {
+        background: transparent url('../img/h5@2x.jpg') no-repeat scroll 100% 100%;
+        background-size: contain;
+    }
 }
 
 
@@ -292,4 +303,12 @@ hr {
 
 .q-bullet-point .q-bullet-point-item .material-icons-outlined{
     font-size: 90px;
+}
+
+.q-sponsor-icons picture {
+    margin: 0px 30px;
+}
+
+.q-sponsor-icons picture:first-child {
+    margin-left: 0px;
 }
