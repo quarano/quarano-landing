@@ -88,13 +88,33 @@ footer.q-page-foot section {
 }
 
 .q-stage.q-anchor {
-    /* using Rectangle_m here, as Rectangle_l has Adobe Stock watermark */
-    background: transparent url('../img/Rectangle_m.png') no-repeat scroll 100% 100%;
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 60px;
     max-height: 200px;
+
 }
+
+#q-anchor-behoerden.q-stage.q-anchor {
+    /* using Rectangle_m here, as Rectangle_l has Adobe Stock watermark */
+    background: transparent url('../img/h6.jpg') no-repeat scroll 100% 100%;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    max-height: 200px;
+
+}
+
+#q-anchor-buerger.q-stage.q-anchor {
+    /* using Rectangle_m here, as Rectangle_l has Adobe Stock watermark */
+    background: transparent url('../img/h5.jpg') no-repeat scroll 100% 100%;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    max-height: 200px;
+
+}
+
 
 .q-info-graph {
     display: flex;
@@ -127,6 +147,7 @@ footer.q-page-foot section {
 .q-stage .q-text-container {
     flex: 1;
     margin: 0px 0;
+    max-width: 380px;
 }
 
 .q-stage .q-img-container {
