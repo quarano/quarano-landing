@@ -1,0 +1,274 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    color: #d97956;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+header.q-page-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 5;
+}
+
+header.q-page-head nav {
+    display: flex;
+    flex: 1;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+footer.q-page-foot {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background: transparent url('../img/Rectangle_b.png') no-repeat scroll 100% 100%;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+footer.q-page-foot section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.q-footer-links {
+    padding: 0;
+    margin: 1em 0 40px 0;
+}
+
+.q-footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.q-stage {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    background: transparent url('../img/Rectangle.png') no-repeat scroll 100% 100%;
+    background-size: cover;
+    color: #fff;
+    padding: 0 10%;
+    line-height: 3em;
+}
+
+#q-anchor-home{
+    min-height: 290px;
+}
+
+.q-stage.q-anchor {
+    /* using Rectangle_m here, as Rectangle_l has Adobe Stock watermark */
+    background: transparent url('../img/Rectangle_m.png') no-repeat scroll 100% 100%;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    max-height: 200px;
+}
+
+.q-info-graph {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 20px 10%;
+    margin: 50px 0;
+}
+
+.q-info-graph picture,
+.q-info-graph img,
+.q-info-graph source {
+    width: 100%
+}
+
+.q-button {
+    color: #d97956;
+    background-color: #fff;
+    border: 3px solid #d97956;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 2em;
+    border-radius: 30px;
+    padding: 5px 20px;
+    margin: 10px 15px 0 0;
+    cursor: pointer;
+}
+
+.q-stage .q-text-container {
+    flex: 1;
+    margin: 0px 0;
+}
+
+.q-stage .q-img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    flex: 2;
+}
+
+.q-stage .q-img-container img {
+    width: 79%;
+}
+
+.q-stage .q-img-container .q-desktop,
+.q-stage .q-img-container .q-phone {
+    flex: 1;
+}
+
+.q-stage .q-img-container .q-phone {
+    position: relative;
+    z-index: 1;
+    background: transparent url('../img/phone_5_black_1.png') no-repeat scroll 100% 100%;
+    background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .q-stage .q-img-container .q-phone {
+        background: transparent url('../img/phone_5_black_1@2x.png') no-repeat scroll 100% 100%;
+        background-size: contain;
+    }
+}
+
+.q-stage .q-img-container .q-desktop {
+    position: relative;
+    z-index: 0;
+    left: -20%;
+    background: transparent url('../img/desktop_1.png') no-repeat scroll 100% 100%;
+    background-size: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .q-stage .q-img-container .q-desktop {
+        background: transparent url('../img/desktop_1@2x.png') no-repeat scroll 100% 100%;
+        background-size: contain;
+    }
+}
+
+.q-navigation {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.q-content {
+    color: #666;
+    margin: 50px auto;
+    padding: 0 15%;
+    line-height: 1.5em;
+}
+
+.q-content p {
+    font-weight: bold;
+}
+
+.q-content.q-content-narrow {
+    padding: 0 25%;
+}
+
+.q-contact {
+    padding: 25px 15% 42px;
+}
+
+.q-center {
+    text-align: center;
+}
+
+.q-info-box .q-content article {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5em;
+    background: transparent url('../img/QUARANO_STOERER_bx.png') no-repeat scroll 0 0;
+    background-size: cover;
+    padding: 10px 25px;
+}
+
+hr {
+    border: 1px solid #fff;
+    background-color: #fff;
+    height: 8px;
+    margin: 0;
+}
+
+.q-video {
+    width: 100%;
+}
+
+.q-odd-background {
+    background-image: none;
+    background-color: #eee;
+    color: #666;
+}
+
+.q-bullet-point-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.q-bullet-point-list .q-bullet-point {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: stretch;
+    margin: 20px 0;
+}
+
+.q-bullet-point .q-bullet-point-item {
+    background-color: #fff;
+    margin-right: 25px;
+    border: 40px solid #fff;
+    border-radius: 50%;
+    min-height: 100px;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.q-bullet-point .q-bullet-point-desc {
+    flex: 1;
+    line-height: 1.5em;
+}
+
+.q-bullet-point .q-bullet-point-item img {
+    border-radius: 50%;
+}
+
+.q-bullet-point .q-bullet-point-item .material-icons-outlined{
+    font-size: 90px;
+}
