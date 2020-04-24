@@ -7,9 +7,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+h1 {
 
+}
 h2 {
     color: #d97956;
+}
+h2.h1 {
+    color: #fff;
+    line-height: 1.2em;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 ul {
@@ -224,7 +232,7 @@ footer.q-page-foot section {
 }
 
 .q-content p {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .q-content.q-content-narrow {
@@ -401,6 +409,45 @@ footer.q-page-foot section {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .q-bullet-point .q-bullet-point-item {
+        margin-right: 20px;
+        border: 20px solid #fff;
+    }
+    .q-content.q-content-narrow {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .q-info-box .q-content.q-content-narrow {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media all and (max-width: 768px) {
+    .q-navigation li:first-child {
+        display: none;
+    }
+    .q-navigation li {
+        margin-left: 5px;
+    }
+    h2 {
+        line-height: 34px;
+    }
+    .q-stage .q-img-container {
+        display: none;
+    }
+    .q-content, .q-bullet-point .q-bullet-point-desc {
+        font-size: 16px;
+    }
+    .q-content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .q-bullet-point .q-bullet-point-item {
+        border: 0 solid #fff;
+    }
+    .q-bullet-point .q-bullet-point-item .material-icons-outlined {
+        font-size: 70px;
+    }
     .q-content.q-content-narrow {
         padding-left: 0%;
         padding-right: 0%;
@@ -413,6 +460,25 @@ footer.q-page-foot section {
         display: none;
     }
 }
+
+@media all and (max-width: 560px) {
+    header.q-page-head {
+        padding: 0 3%;
+    }
+    .q-stage {
+        background-position: 73%;
+    }
+    .q-stage,
+    .q-content {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .q-stage .q-text-container {
+        max-width: 100%;
+    }
+}
+
+
 /* anchor-fix */
 .q-anchor {
     position: relative;
