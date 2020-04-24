@@ -409,6 +409,9 @@ footer.q-page-foot section {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .q-stage {
+        background-position: 80%;
+    }
     .q-bullet-point .q-bullet-point-item {
         margin-right: 20px;
         border: 20px solid #fff;
@@ -431,6 +434,9 @@ footer.q-page-foot section {
     }
     h2 {
         line-height: 34px;
+    }
+    .q-stage {
+        background-position: 73%;
     }
     .q-stage .q-img-container {
         display: none;
@@ -465,9 +471,6 @@ footer.q-page-foot section {
     header.q-page-head {
         padding: 0 3%;
     }
-    .q-stage {
-        background-position: 73%;
-    }
     .q-stage,
     .q-content {
         padding-left: 3%;
@@ -475,6 +478,15 @@ footer.q-page-foot section {
     }
     .q-stage .q-text-container {
         max-width: 100%;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .q-stage {
+        background-position: 53%;
     }
 }
 
