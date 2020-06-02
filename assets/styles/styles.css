@@ -51,6 +51,18 @@ header.q-page-head nav {
     align-items: stretch;
 }
 
+.q-column {
+    width: 50%;
+    margin: 2rem;
+}
+
+.q-columns {
+    display: flex;
+}
+img {
+    vertical-align: middle;
+}
+
 footer.q-page-foot {
     color: #fff;
     display: flex;
