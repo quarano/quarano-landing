@@ -262,6 +262,13 @@ hr {
     height: 8px;
     margin: 0;
 }
+hr.light-grey {
+    border: 2px solid #eee;
+    background-color: #eee;
+    height: 2px;
+    margin: 0 0 15px 0;
+}
+
 
 .q-video {
     width: 100%;
@@ -313,12 +320,13 @@ hr {
 .q-bullet-point .q-bullet-point-item .material-icons-outlined{
     font-size: 90px;
 }
-
+.q-supporter-icons picture,
 .q-sponsor-icons picture {
-    margin: 0 30px;
+    /* margin: 0 30px; */
 }
 
 
+.q-supporter-icons picture:first-child,
 .q-sponsor-icons picture:first-child {
     margin-left: 0;
 }
@@ -371,6 +379,7 @@ body {
     max-width: 992px;
 }
 .q-sponsor-icons,
+.q-supporter-icons,
 .q-page-foot, #q-anchor-contact {
     max-width: 100%;
 }
