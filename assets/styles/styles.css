@@ -324,6 +324,11 @@ hr.light-grey {
 .q-sponsor-icons picture {
     /* margin: 0 30px; */
 }
+.q-supporter-icons picture img,
+.q-sponsor-icons picture img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 .q-supporter-icons picture:first-child,
