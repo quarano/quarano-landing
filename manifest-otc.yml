@@ -1,0 +1,10 @@
+applications:
+  ###############   Quarano Info Website   (aka "landing-page")  #########################
+      - name: quarano-website
+        memory: 128M
+        buildpacks:
+          - https://github.com/cloudfoundry/nginx-buildpack.git
+        path: ./
+        routes:
+          - route: www.quarano.de/
+          - route: quarano.de/		  
