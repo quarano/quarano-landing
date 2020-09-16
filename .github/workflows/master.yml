@@ -1,0 +1,42 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Deploy to quarano.de
+
+on:
+  push:
+    branches:
+      - master
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  deploy:
+    timeout-minutes: 15
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up CF CLI
+        if: success()
+        uses: jvalkeal/setup-cf-cli@v0
+        with:
+          version: 6.51.0
+
+      - name: CF Login
+        if: success()
+        run: cf login -a $CF_API -u $CF_USERNAME -o $CF_ORG -s $CF_SPACE -p $CF_PASSWORD
+        env:
+          CF_API: ${{ secrets.CF_OTC_API }}
+          CF_ORG: ${{ secrets.CF_OTC_ORG }}
+          CF_SPACE: ${{ secrets.CF_OTC_SPACE_QUARANO }}
+          CF_USERNAME: ${{ secrets.CF_OTC_BUILD_USERNAME }}
+          CF_PASSWORD: ${{ secrets.CF_OTC_BUILD_PASSWORD }}
+
+      - name: Deploy Frontend STAGE
+        if: success()
+        run: cf push quarano-website -f ./manifest-otc.yml
