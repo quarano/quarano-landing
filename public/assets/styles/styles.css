@@ -337,6 +337,43 @@ hr.light-grey {
 }
 
 /* little changes FD  */
+ol.q-agb, ol.q-agb ol {
+    list-style: none;
+    counter-reset: q-counter;
+    padding-left: 0;
+}
+ol.q-agb ol {
+    padding-left: 25px;
+}
+ol.q-agb li {
+    counter-increment: q-counter;
+    margin: 0.25rem;
+}
+ol.q-agb li::before {
+    content: counter(q-counter);
+    color: #d97956;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+ol.q-agb li li::before {
+    content: counter(q-counter);
+    color: #d97956;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-left: -24px;
+    width: 17px;
+    display: inline-block;
+    text-align: left;
+}
+ol.q-agb .li-head {
+    font-size: 24px;
+    color: #d97956;
+    font-weight: bold;
+}
+
+
 
 @font-face {
     font-family: 'Poppins';
