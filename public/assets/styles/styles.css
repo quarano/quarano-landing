@@ -420,8 +420,8 @@ body {
 .q-content {
     max-width: 992px;
 }
-.q-sponsor-icons,
-.q-supporter-icons,
+.q-sponsor,
+.q-supporter,
 .q-page-foot, #q-anchor-contact {
     max-width: 100%;
 }
@@ -548,8 +548,15 @@ footer.q-page-foot section {
 }
 .q-anchor a.anchorfix {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -87px;
+}
+
+.q-supporter-icons img, .q-sponsor-icons img {
+    margin-right: 20px;
+}
+.q-supporter-icons img:last-child, .q-sponsor-icons img:last-child {
+    margin-right: 0;
 }
 
 
