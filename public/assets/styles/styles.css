@@ -701,6 +701,7 @@ footer.q-page-foot section {
     line-height: 1.5em;
     font-weight: 300;
 }
+.nav-item.active .nav-link,
 .nav-link:hover {
     color: #d97956;
 }

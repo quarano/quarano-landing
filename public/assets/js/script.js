@@ -21,3 +21,13 @@ const ham = document.getElementById('ham');
 ham.addEventListener('click', function () {
   document.body.classList.toggle('nav-is-toggled');
 });
+
+const navClicked = [].slice.call(document.querySelectorAll('.nav-item'));
+navClicked.forEach(item => {
+  item.querySelector('.nav-link').addEventListener('click', () => {
+        //item.classList.toggle('active');
+        document.body.classList.toggle('nav-is-toggled');
+        document.getElementById('check').checked = false;
+      }
+  );
+});
